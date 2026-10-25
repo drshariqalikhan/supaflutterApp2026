@@ -22,7 +22,7 @@ Future<void> main() async {
     }
   }
 
-  runApp(const HomeWidget());
+  runApp(const MyApp());
 
   // Wrap runApp with DevicePreview
   // runApp(DevicePreview());
@@ -32,8 +32,8 @@ Future<void> main() async {
 SupabaseClient get supabase => Supabase.instance.client;
 
 
-class HomeWidget extends StatelessWidget {
-  const HomeWidget({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
